@@ -15,10 +15,12 @@ $("#message-submit").click(
 				$("#message-error-alert").empty().append("请输入您的信息");
 				$("#message-error-alert").fadeIn(500).fadeOut(3000);
 			} else {
-
 				$("#message-response-img").attr("src",
 						"images/message-submitting.gif");
 				$("#message-response-img").fadeIn(100);
+				$("#sender-name").val("");
+				$("#sender-email-addr").val("");
+				$("#sender-message").val("");
 				$.ajax({
 					type : "POST",
 					url : "app/mail/create",

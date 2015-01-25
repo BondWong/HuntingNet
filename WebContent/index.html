@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript">
-		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);}
+	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);}
 </script>
 <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'> -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -238,7 +238,9 @@ a.feature {
 							<li><a href="javascript:void(0)" class="feature">专业管理维护</a></li>
 						</ul>
 						<p>
-							<button type="button" class="btn btn-primary feature">费用查询</button>
+							<button type="button" class="btn btn-primary feature"
+								data-container="body" data-toggle="popover"
+								data-placement="bottom" data-content="制作费：2500CNY起，最终价格由双方协商 || 维护费：500CNY／Y">费用查询</button>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -253,7 +255,9 @@ a.feature {
 							<li><a href="javascript:void(0)" class="feature">专业架构师设计</a></li>
 						</ul>
 						<p>
-							<button type="button" class="btn btn-primary feature">费用查询</button>
+							<button type="button" class="btn btn-primary feature"
+								data-container="body" data-toggle="popover"
+								data-placement="bottom" data-content="制作费：5000CNY起，最终价格由双方协商 || 维护费：800CNY／Y">费用查询</button>
 						</p>
 					</div>
 					<div class="col-md-4" style="padding-top: 20px;">
@@ -268,7 +272,9 @@ a.feature {
 							<li><a href="javascript:void(0)" class="feature">两天内实现</a></li>
 						</ul>
 						<p>
-							<button type="button" class="btn btn-primary feature">费用查询</button>
+							<button type="button" class="btn btn-primary feature"
+								data-container="body" data-toggle="popover"
+								data-placement="bottom" data-content="制作费：500CNY起，最终价格由双方协商 || 维护费：0CNY／Y">费用查询</button>
 						</p>
 					</div>
 				</div>
@@ -605,9 +611,9 @@ a.feature {
 							name="email" type="text" class="textbox" placeholder="您的邮箱">
 						<textarea id="sender-message" name="message" placeholder="信息"></textarea>
 						<input type="submit" value="提交" id="message-submit">
-						<div class="alert alert-danger" role="alert" id="message-error-alert"
-							style="display: none"></div>
-						<img src="" style="display: none" id="message-response-img"/>
+						<div class="alert alert-danger" role="alert"
+							id="message-error-alert" style="display: none"></div>
+						<img src="" style="display: none" id="message-response-img" />
 					</form>
 				</div>
 			</div>
@@ -688,6 +694,20 @@ a.feature {
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/message-submit.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop : $(this.hash).offset().top
+				}, 1200);
+			});
+		});
+		$(function() {
+			$('[data-toggle="popover"]').popover()
+		})
+	</script>
+
 
 	<a href="#" id="toTop" style="display: block;"><span
 		id="toTopHover" style="opacity: 1;"></span></a>
