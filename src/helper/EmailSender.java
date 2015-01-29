@@ -13,6 +13,7 @@ public class EmailSender {
 	final static String PASSWORD = "mb1003BM";
 	final static String GREETING = "HuntingNet";
 	final static String COMPANYNAME = "CampuSite";
+	final static String FROMADDR = "campusite@outlook.com";
 	final static String TOADDR = "306941426@qq.com";
 	static Properties props = new Properties();
 	static {
@@ -30,8 +31,7 @@ public class EmailSender {
 		Session session = Session.getInstance(props);
 		MimeMessage msg = new MimeMessage(session);
 		try {
-			Address campusite = new InternetAddress("campusite@outlook.com",
-					COMPANYNAME);
+			Address campusite = new InternetAddress(FROMADDR, COMPANYNAME);
 			Address toAddress = new InternetAddress(TOADDR, GREETING);
 			msg.setFrom(campusite);
 			msg.setRecipient(Message.RecipientType.TO, toAddress);
