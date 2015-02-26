@@ -16,7 +16,7 @@ $("#message-submit").click(
 				$("#message-error-alert").fadeIn(500).fadeOut(3000);
 			} else {
 				$("#message-response-img").attr("src",
-						"images/message-submitting.gif");
+						"HuntingWeb/images/message-submitting.gif");
 				$("#message-response-img").fadeIn(100);
 				$("#sender-name").val("");
 				$("#sender-email-addr").val("");
@@ -33,7 +33,7 @@ $("#message-submit").click(
 					}),
 					success : function(data, status, jqXHR) {
 						$("#message-response-img").attr("src",
-								"images/message-ok.png");
+								"HuntingWeb/images/message-ok.png");
 						$("#message-response-img").fadeOut(2000);
 					},
 					fail : function(data, status, jqXHR) {
