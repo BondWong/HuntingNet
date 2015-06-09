@@ -1,6 +1,5 @@
 package resource;
-
-import helper.EmailSender;
+import helper.SMSUtil;
 
 import java.util.Map;
 
@@ -14,7 +13,7 @@ import utils.ExecutorUtil;
 
 @Path("/mail")
 public class MailService {
-	private final static String NAME = "客户来信息";
+	private final static String PHONENUMBER = "13750046461";
 
 	@SuppressWarnings("rawtypes")
 	@Path("/create")
@@ -28,7 +27,7 @@ public class MailService {
 			public void run() {
 				// TODO Auto-generated method stub
 				try {
-					new EmailSender().send(NAME,
+					SMSUtil.send(PHONENUMBER,
 							"客户称呼：" + messageTriple.get("name") + "\n客户邮箱："
 									+ messageTriple.get("addr") + "\n客户信息:\n"
 									+ messageTriple.get("message"));
