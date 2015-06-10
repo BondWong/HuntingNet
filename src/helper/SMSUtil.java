@@ -19,7 +19,6 @@ public class SMSUtil {
 
 		System.out.println(straddr);
 		StringBuffer sb = new StringBuffer(straddr);
-		System.out.println("URL:" + sb);
 
 		// 发送请求
 		URL url = new URL(sb.toString());
