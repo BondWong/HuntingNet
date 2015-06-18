@@ -5,9 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description"
-	content="猎网工作室，专业网站、手机APP定制开发，LOGO、矢量图、宣传单等设计，帮助您开创以及提升自己的业务">
-<meta name="keywords"
-	content="APP,iOS,Android,HTML5,网站,外包,官方网站,商城网站,LOGO,矢量图,业务提升">
+	content="猎网工作室，专业APP定制、网站定制、技术外包、设计与推广，帮助您开创以及提升自己的业务">
+<meta name="keywords" content="APP定制,网站定制,技术外包,设计与推广,业务提升">
 <meta name="author" content="黃俊邦(WongChunbong)">
 <title>专业技术外包|帮助提升业务-猎网工作室</title>
 
@@ -69,7 +68,7 @@
 					<li><a class="page-scroll" href="#services">技术服务</a></li>
 					<li><a class="page-scroll" href="#portfolio">成功案例</a></li>
 					<li><a class="page-scroll" href="#about">关于我们</a></li>
-					<li><a class="page-scroll" href="#team">团队信息</a></li>
+					<!-- <li><a class="page-scroll" href="#team">团队信息</a></li> -->
 					<li><a class="page-scroll" href="#contact">联系我们</a></li>
 				</ul>
 			</div>
@@ -111,7 +110,8 @@
 					</span>
 					<h4 class="service-heading">APP定制开发服务</h4>
 					<p class="text-muted">您说需要，我们实现，无论平台，无论技术，我们都能为您提供技术支持。</p>
-					<button class="btn btn-xl2">查看详情</button>
+					<a href="#appModal" data-toggle="modal" class="btn btn-xl2">
+						查看详情</a>
 				</div>
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x"> <i
@@ -120,18 +120,20 @@
 					</span>
 					<h4 class="service-heading">网站定制开发服务</h4>
 					<p class="text-muted">让我们的工程师为您开发和维护你的网站，帮助您开创和提升业务。</p>
-					<button class="btn btn-xl2">查看详情</button>
+					<a href="#websiteModal" data-toggle="modal" class="btn btn-xl2">
+						查看详情</a>
 				</div>
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x"> <i
 						class="fa fa-circle fa-stack-2x text-primary"></i> <i
 						class="fa fa-file-image-o fa-stack-1x services-icon"></i>
 					</span>
-					<h4 class="service-heading">宣传设计服务</h4>
+					<h4 class="service-heading">设计与推广服务</h4>
 					<p class="text-muted">
 						您的业务是独一无二的，<br />您的设计也应该如此。
 					</p>
-					<button class="btn btn-xl2">查看详情</button>
+					<a href="#promote_designModal" data-toggle="modal"
+						class="btn btn-xl2"> 查看详情</a>
 				</div>
 			</div>
 		</div>
@@ -184,7 +186,7 @@
 							<div class="portfolio-hover-content">
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
-						</div> <img src="HuntingWeb-v2/img/portfolio/w3.png"
+						</div> <img src="HuntingWeb-v2/img/portfolio/w5.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
@@ -199,7 +201,7 @@
 							<div class="portfolio-hover-content">
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
-						</div> <img src="HuntingWeb-v2/img/portfolio/w4.png"
+						</div> <img src="HuntingWeb-v2/img/portfolio/w3.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
@@ -214,7 +216,7 @@
 							<div class="portfolio-hover-content">
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
-						</div> <img src="HuntingWeb-v2/img/portfolio/w5.png"
+						</div> <img src="HuntingWeb-v2/img/portfolio/w4.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
@@ -256,7 +258,7 @@
 					<img class="img-responsive" src="HuntingWeb-v2/img/about/1.jpg"
 						alt="">
 					<p class="text-muted">
-						<span class="company_name">猎网工作室</span>是由多支专业团队构成的技术支持工作室，宗旨是为广大客户提供高质量的、合理价格的技术支持，帮助客户开创新事业以及提升业务。我们的三大技术服务是：APP定制开发服务，网站定制开发服务以及宣传设计服务。让我们帮助您吧！
+						<span class="company_name">猎网工作室</span>是由多支专业团队构成的技术工作室，宗旨是为广大客户提供高质量的、合理价格的技术支持，帮助客户开创新事业以及提升业务。我们的三大技术服务是：APP定制开发服务，网站定制开发服务以及设计与推广服务。让我们帮助您吧！
 					</p>
 				</div>
 				<div class="col-md-4">
@@ -270,7 +272,7 @@
 					<h4>2012</h4>
 					<p class="text-muted">推出APP定制开发服务。</p>
 					<h4>2014</h4>
-					<p class="text-muted">推出宣传设计服务。</p>
+					<p class="text-muted">推出推广与设计服务。</p>
 				</div>
 				<div class="col-md-4">
 					<h4 class="about-heading">
@@ -728,6 +730,120 @@
 							<button type="button" class="btn btn-primary"
 								data-dismiss="modal">
 								<i class="fa fa-times"></i> Close Project
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APP Service Modal -->
+	<div class="portfolio-modal modal fade" id="appModal" tabindex="-1"
+		role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<!-- Project Details Go Here -->
+							<h2>APP定制服务</h2>
+							<p class="item-intro text-muted"></p>
+							<img class="img-responsive img-centered"
+								src="HuntingWeb-v2/img/portfolio/m1p.jpeg" alt="">
+							<p>介绍说明</p>
+							<p>
+								<strong>介绍说明</strong>介绍说明
+							</p>
+							<!-- <ul class="list-inline">
+								<li>Date: December 2014</li>
+								<li>Client: Ignota audiam vel</li>
+								<li>Category: Web Design</li>
+							</ul> -->
+							<button type="button" class="btn btn-primary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> 返回
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Website Service Modal -->
+	<div class="portfolio-modal modal fade" id="websiteModal" tabindex="-1"
+		role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<!-- Project Details Go Here -->
+							<h2>网站定制服务</h2>
+							<p class="item-intro text-muted"></p>
+							<img class="img-responsive img-centered"
+								src="HuntingWeb-v2/img/portfolio/m1p.jpeg" alt="">
+							<p>介绍说明</p>
+							<p>
+								<strong>介绍说明</strong>介绍说明
+							</p>
+							<!-- <ul class="list-inline">
+								<li>Date: December 2014</li>
+								<li>Client: Ignota audiam vel</li>
+								<li>Category: Web Design</li>
+							</ul> -->
+							<button type="button" class="btn btn-primary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> 返回
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Promote&Design Service Modal -->
+	<div class="portfolio-modal modal fade" id="promote_designModal"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<!-- Project Details Go Here -->
+							<h2>推广与设计服务</h2>
+							<p class="item-intro text-muted"></p>
+							<img class="img-responsive img-centered"
+								src="HuntingWeb-v2/img/portfolio/m1p.jpeg" alt="">
+							<p>介绍说明</p>
+							<p>
+								<strong>介绍说明</strong>介绍说明
+							</p>
+							<!-- <ul class="list-inline">
+								<li>Date: December 2014</li>
+								<li>Client: Ignota audiam vel</li>
+								<li>Category: Web Design</li>
+							</ul> -->
+							<button type="button" class="btn btn-primary"
+								data-dismiss="modal">
+								<i class="fa fa-times"></i> 返回
 							</button>
 						</div>
 					</div>
