@@ -1,5 +1,7 @@
 /***** BASE CSS *****/
-
+a,a:hover,a:focus,a:active,a.active {
+	outline: 0;
+}
 /* Site Name */
 #divSiteTitle {
 	text-decoration: none;

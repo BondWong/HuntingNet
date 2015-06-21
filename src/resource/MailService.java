@@ -1,4 +1,5 @@
 package resource;
+
 import helper.SMSUtil;
 
 import java.util.Map;
@@ -29,7 +30,8 @@ public class MailService {
 				try {
 					SMSUtil.send(PHONENUMBER,
 							"客户称呼：" + messageTriple.get("name") + "\n客户邮箱："
-									+ messageTriple.get("addr") + "\n客户信息:\n"
+									+ messageTriple.get("addr") + "\n客户电话:\n"
+									+ messageTriple.get("phone") + "\n客户留言:\n"
 									+ messageTriple.get("message"));
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
