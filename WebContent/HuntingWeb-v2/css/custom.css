@@ -1279,72 +1279,79 @@ Main Components
 		color: #FFFFFF;
 	}
 	.cd-pricing-header h2 {
-		font-size: 2.3rem;
+		font-size: 3rem;
 		letter-spacing: 2px;
 	}
 }
 
 .cd-value {
-	font-size: 3rem;
+	font-size: 2.3rem;
 	font-weight: 300;
 }
 
 .cd-currency {
-	margin-left: 5px;
-	font-size: 3rem;
+	font-size: 2.3rem;
 	font-weight: 300;
 }
 
 .cd-duration {
-	font-weight: 700;
-	font-size: 1.3rem;
-	color: #8dc8e4;
+	font-weight: 300;
+	font-size: 2.3rem;
+	color: black;
 	text-transform: uppercase;
 }
 
 .cd-popular .cd-duration {
-	color: #f3b6ab;
+	color: black;
 }
 
 .cd-duration::before {
 	content: '/';
-	margin-right: 2px;
 }
 
 .cd-price-text {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	font-weight: 300;
-	font-weight: 700;
-	margin-left: 5px;
+	color: black;
 }
 
 @media only screen and (min-width: 768px) {
 	.cd-value {
-		font-size: 5rem;
+		font-size: 2.3rem;
 		font-weight: 300;
 	}
-	.cd-currency,.cd-duration {
+	.cd-currency {
 		color: rgba(23, 61, 80, 0.4);
 	}
-	.cd-popular .cd-currency,.cd-popular .cd-duration {
+	.cd-duration {
+		color: black;
+	}
+	.cd-popular .cd-currency {
 		color: #e97d68;
 	}
-	.cd-secondary-theme .cd-currency,.cd-secondary-theme .cd-duration {
+	.cd-popular .cd-duration {
+		color: black;
+	}
+	.cd-secondary-theme .cd-currency {
 		color: #2e80a7;
 	}
-	.cd-secondary-theme .cd-popular .cd-currency,.cd-secondary-theme .cd-popular .cd-duration
-		{
+	.cd-secondary-theme .cd-duration {
+		color: black;
+	}
+	.cd-secondary-theme .cd-popular .cd-currency {
 		color: #ba6453;
+	}
+	.cd-secondary-theme .cd-popular .cd-duration {
+		color: black;
 	}
 	.cd-currency {
 		display: inline-block;
-		margin-top: 2px;
 		vertical-align: top;
-		font-size: 2rem;
-		font-weight: 700;
+		font-size: 2.3rem;
+		font-weight: 300;
 	}
 	.cd-duration {
-		font-size: 1.4rem;
+		font-size: 2.3rem;
 	}
 }
 
@@ -1356,61 +1363,66 @@ Main Components
 .cd-currency-hosting {
 	font-size: 1.8rem;
 	font-weight: 300;
-	margin-left: 10px;
 }
 
 .cd-duration-hosting {
-	font-weight: 700;
-	font-size: 1.2rem;
-	color: #8dc8e4;
+	font-weight: 300;
+	font-size: 1.8rem;
+	color: black;
 	text-transform: uppercase;
 }
 
 .cd-popular-hosting .cd-duration-hosting {
-	color: #f3b6ab;
+	color: black;
 }
 
 .cd-duration-hosting::before {
 	content: '/';
-	margin-right: 2px;
 }
 
 .cd-price-text-hosting {
 	font-size: 1.8rem;
 	font-weight: 300;
-	font-weight: 700;
-	margin-left: 2px;
+	color: black;
 }
 
 @media only screen and (min-width: 768px) {
 	.cd-value-hosting {
-		font-size: 2.5rem;
+		font-size: 1.8rem;
 		font-weight: 300;
 	}
-	.cd-currency-hosting,.cd-duration-hosting {
+	.cd-currency-hosting {
 		color: rgba(23, 61, 80, 0.4);
 	}
-	.cd-popular-hosting .cd-currency-hosting,.cd-popular-hosting .cd-duration-hosting
-		{
+	.cd-duration-hosting {
+		color: black;
+	}
+	.cd-popular .cd-currency-hosting {
 		color: #e97d68;
 	}
-	.cd-secondary-theme .cd-currency-hosting,.cd-secondary-theme .cd-duration-hosting
-		{
+	.cd-popular .cd-duration-hosting {
+		color: black;
+	}
+	.cd-secondary-theme .cd-currency-hosting {
 		color: #2e80a7;
 	}
-	.cd-secondary-theme .cd-popular-hosting .cd-currency-hosting,.cd-secondary-theme .cd-popular .cd-duration-hosting
-		{
+	.cd-secondary-theme .cd-duration-hosting {
+		color: black;
+	}
+	.cd-secondary-theme .cd-popular .cd-currency-hosting {
 		color: #ba6453;
+	}
+	.cd-secondary-theme .cd-popular .cd-duration-hosting {
+		color: black;
 	}
 	.cd-currency-hosting {
 		display: inline-block;
-		margin-top: 2px;
 		vertical-align: top;
-		font-size: 1.2rem;
-		font-weight: 700;
+		font-size: 1.8rem;
+		font-weight: 300;
 	}
 	.cd-duration-hosting {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 	}
 }
 
@@ -1439,7 +1451,7 @@ Main Components
 	width: 100px;
 	float: left;
 	padding: 1.3em 0.7em;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
