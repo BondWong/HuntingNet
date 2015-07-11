@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="猎网工作室，专业APP定制、网站定制、技术外包、设计与推广，帮助您开创以及提升自己的业务">
+<meta name="keywords" content="APP定制,网站定制,SEO,技术外包,设计与推广,业务提升">
+<meta name="author" content="黃俊邦(WongChunbong)">
+<title>专业技术外包|帮助提升业务-猎网工作室</title>
+
+<!-- fullpage css -->
+<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+<!-- favicon -->
+<link rel="shortcut icon" href="../img/favicon.jpg" />
+
+<style>
+/* Centered texts in each section *
+	--------------------------------------- */
+.section {
+	text-align: center;
+	background-size: cover;
+} /* Backgrounds will cover all the section *
+	--------------------------------------- */
+.background {
+	background-image: url(../css/scribble_light.png);
+}
+
+.slogan {
+	background-color: white;
+}
+
+#logo {
+	width: 15%;
+	height: auto;
+	display: none;
+	position: relative;
+}
+
+#slogan {
+	height: 12.5%;
+	width: auto;
+	display: none;
+	position: relative;
+}
+</style>
+<body>
+	<div id="fullpage">
+		<div class="section background">requirement</div>
+		<div class="section background">proposal</div>
+		<div class="section background">choice</div>
+		<div class="section background">product</div>
+		<div class="section background">result</div>
+		<div class="section slogan">
+			<div>
+				<img src="../img/logo.png" id="logo" />
+			</div>
+			<div>
+				<img src="../img/logo.png" id="slogan" />
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.color.js"></script>
+	<!-- fullpage plugin -->
+	<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				resize : true,
+				afterLoad : function(anchorLink, index) {
+					if (index == 6) {
+						$(".slogan").animate({
+							backgroundColor : "rgb(16, 16, 16)"
+						}, 2000, function() {
+							$("#logo").show(1500).animate({
+								top : "-60px",
+								width : "20%"
+							}, 1000, function() {
+								$("#slogan").fadeIn(700);
+							});
+						});
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>

@@ -5,7 +5,8 @@
 body {
 	overflow-x: hidden;
 	font-family: "Helvetica Neue", "Hiragino Sans GB", "Segoe UI",
-		"Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif !important;
+		"Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti,
+		sans-serif !important;
 }
 
 .text-muted {
@@ -223,7 +224,7 @@ h5 {
 	opacity: 0.5;
 }
 
-#portfolio .line,#team .line, #contact .line{
+#portfolio .line,#team .line,#contact .line {
 	background-image: -webkit-linear-gradient(left, #cecece, #fff, #cecece);
 	background-image: -moz-linear-gradient(left, #cecece, #fff, #cecece);
 	background-image: -ms-linear-gradient(left, #cecece, #fff, #cecece);
@@ -702,4 +703,8 @@ body {
 
 span.company_name {
 	color: #663300;
+}
+
+img#wechat_qrcode {
+	/*display: none;*/
 }
