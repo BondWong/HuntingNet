@@ -32,7 +32,7 @@
 }
 
 #logo {
-	width: 15%;
+	width: 25%;
 	height: auto;
 	display: none;
 	position: relative;
@@ -44,14 +44,30 @@
 	display: none;
 	position: relative;
 }
+
+@media only screen and (max-device-width: 480px) {
+	#logo {
+		width: 60%;
+		height: auto;
+		display: none;
+		position: relative;
+		display: none;
+	}
+	#slogan {
+		height: auto;
+		width: 50%;
+		display: none;
+		position: relative;
+	}
+}
 </style>
 <body>
 	<div id="fullpage">
-		<div class="section background">沟通：深入了解客户的需求，理解客户的项目相关信息。</div>
-		<div class="section background">策划：分析员将沟通结果整理，产品经理策划方案供客户选择。</div>
-		<div class="section background">确认：客户选择方案，再次沟通后调整方案，确认方案后实施。</div>
-		<div class="section background">产品：工作室根据客户需求，实时反馈产品进度，CTO安排人员，完成方案实施。</div>
-		<div class="section background">完成：客户验收，合作成功。</div>
+		<div class="section background">深入了解客户的需求，理解客户的项目相关信息。</div>
+		<div class="section background">分析员将沟通结果整理，产品经理提供多种方案供客户选择。</div>
+		<div class="section background">客户选择一种方案，再次沟通后调整方案，确认方案后实施。</div>
+		<div class="section background">随时反馈，与客户一起完成产品。</div>
+		<div class="section background">您专心处理业务，我们悉心维护产品。</div>
 		<div class="section slogan">
 			<div>
 				<img src="../img/logo.png" id="logo" />
@@ -76,9 +92,8 @@
 						$(".slogan").animate({
 							backgroundColor : "rgb(16, 16, 16)"
 						}, 2000, function() {
-							$("#logo").show(1500).animate({
+							$("#logo").show(1000).animate({
 								top : "-60px",
-								width : "20%"
 							}, 1000, function() {
 								$("#slogan").fadeIn(700);
 							});
