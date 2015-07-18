@@ -39,10 +39,11 @@
 }
 
 #slogan {
-	height: 12.5%;
-	width: auto;
-	display: none;
+	font-size: 30px;
+	color: white;
 	position: relative;
+	height: 12.5%;
+	opacity: 0.0;
 }
 
 /*iPhone protrait*/
@@ -52,14 +53,13 @@
 	#logo {
 		width: 60%;
 		height: auto;
-		display: none;
 		position: relative;
 		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -75,12 +75,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -96,12 +95,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -117,12 +115,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -137,12 +134,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -157,12 +153,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -177,12 +172,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 20px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -197,12 +191,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 30px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -216,12 +209,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 30px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -237,12 +229,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 30px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -257,12 +248,11 @@
 		height: auto;
 		display: none;
 		position: relative;
-		display: none;
 	}
 	#slogan {
-		height: auto;
-		width: 50%;
-		display: none;
+		font-size: 30px;
+		color: white;
+		opacity: 0.0;
 		position: relative;
 	}
 	.background {
@@ -282,7 +272,7 @@
 				<img src="../img/logo.png" id="logo" />
 			</div>
 			<div>
-				<img src="../img/logo.png" id="slogan" />
+				<p id="slogan">专业技术支持，助您提升业务！</p>
 			</div>
 		</div>
 	</div>
@@ -302,9 +292,9 @@
 							backgroundColor : "rgb(16, 16, 16)"
 						}, 2000, function() {
 							$("#logo").show(1000).animate({
-								top : "-60px",
+								top : "-20px",
 							}, 1000, function() {
-								$("#slogan").fadeIn(700);
+								$("#slogan").fadeTo(700, 1);
 							});
 						});
 					}
